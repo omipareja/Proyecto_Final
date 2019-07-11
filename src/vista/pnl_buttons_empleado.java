@@ -35,6 +35,7 @@ public class pnl_buttons_empleado extends javax.swing.JPanel {
 
         jButton1 = new javax.swing.JButton();
 
+        jButton1.setFont(new java.awt.Font("Cambria", 0, 11)); // NOI18N
         jButton1.setText("Realizat Tarea");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -42,7 +43,7 @@ public class pnl_buttons_empleado extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(8, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );

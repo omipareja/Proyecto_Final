@@ -41,6 +41,7 @@ public class Frm_principal extends javax.swing.JFrame implements PatronesDiseño
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jButton2.setFont(new java.awt.Font("Cambria", 0, 11)); // NOI18N
         jButton2.setText("Empleado");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -48,6 +49,7 @@ public class Frm_principal extends javax.swing.JFrame implements PatronesDiseño
             }
         });
 
+        jButton1.setFont(new java.awt.Font("Cambria", 0, 11)); // NOI18N
         jButton1.setText("Administrador");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,11 +59,13 @@ public class Frm_principal extends javax.swing.JFrame implements PatronesDiseño
 
         pnl_principal.setLayout(new java.awt.CardLayout());
 
+        pnl_administrador1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
         javax.swing.GroupLayout pnl_administrador1Layout = new javax.swing.GroupLayout(pnl_administrador1);
         pnl_administrador1.setLayout(pnl_administrador1Layout);
         pnl_administrador1Layout.setHorizontalGroup(
             pnl_administrador1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 566, Short.MAX_VALUE)
+            .addGap(0, 562, Short.MAX_VALUE)
         );
         pnl_administrador1Layout.setVerticalGroup(
             pnl_administrador1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -71,6 +75,8 @@ public class Frm_principal extends javax.swing.JFrame implements PatronesDiseño
         pnl_principal.add(pnl_administrador1, "card2");
 
         pnl_buttons.setLayout(new java.awt.CardLayout());
+
+        pnl_buttons_admon2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         pnl_buttons.add(pnl_buttons_admon2, "BotonesAdmon");
         pnl_buttons.add(pnl_buttons_empleado1, "BotonesEmpleado");
 
@@ -78,13 +84,14 @@ public class Frm_principal extends javax.swing.JFrame implements PatronesDiseño
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(56, 56, 56))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(pnl_buttons, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnl_principal, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -94,8 +101,8 @@ public class Frm_principal extends javax.swing.JFrame implements PatronesDiseño
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(pnl_principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
