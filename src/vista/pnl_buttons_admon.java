@@ -33,13 +33,42 @@ public class pnl_buttons_admon extends javax.swing.JPanel implements PrincipalVi
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        CrearProyecto = new javax.swing.JButton();
+        VerEmpleados = new javax.swing.JButton();
+        AgregarEmpleados = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        ControlarProyecto = new javax.swing.JButton();
 
-        jButton1.setFont(new java.awt.Font("Cambria", 3, 11)); // NOI18N
-        jButton1.setText("Crear Proyecto");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        CrearProyecto.setText("nuevo proyecto");
+        CrearProyecto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                CrearProyectoActionPerformed(evt);
+            }
+        });
+
+        VerEmpleados.setText("revisar proyecro");
+        VerEmpleados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VerEmpleadosActionPerformed(evt);
+            }
+        });
+
+        AgregarEmpleados.setText("Agregar");
+        AgregarEmpleados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AgregarEmpleadosActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("empleado");
+
+        jLabel2.setText("proyectos:");
+
+        ControlarProyecto.setText("Controlar");
+        ControlarProyecto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ControlarProyectoActionPerformed(evt);
             }
         });
 
@@ -48,26 +77,69 @@ public class pnl_buttons_admon extends javax.swing.JPanel implements PrincipalVi
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addGap(0, 49, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1)
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ControlarProyecto)
+                    .addComponent(AgregarEmpleados)
+                    .addComponent(VerEmpleados))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(CrearProyecto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton1)
-                .addContainerGap(295, Short.MAX_VALUE))
+                .addGap(20, 20, 20)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(VerEmpleados)
+                .addGap(18, 18, 18)
+                .addComponent(AgregarEmpleados)
+                .addGap(29, 29, 29)
+                .addComponent(jLabel2)
+                .addGap(27, 27, 27)
+                .addComponent(CrearProyecto)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ControlarProyecto)
+                .addContainerGap(75, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void CrearProyectoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrearProyectoActionPerformed
+   // Aca empiezoa  crear el proyecto 
+   visitador.CambiarTarjetaB("CrearProyecto");
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_CrearProyectoActionPerformed
+
+    private void AgregarEmpleadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarEmpleadosActionPerformed
+       visitador.CambiarTarjetaB("CrearEmpleados"); // TODO add your handling code here:
+    }//GEN-LAST:event_AgregarEmpleadosActionPerformed
+
+    private void VerEmpleadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerEmpleadosActionPerformed
+    visitador.CambiarTarjetaB("VerEmpleados");
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VerEmpleadosActionPerformed
+
+    private void ControlarProyectoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ControlarProyectoActionPerformed
+    visitador.CambiarTarjetaB("ConsultarProyectos"); // TODO add your handling code here:
+    }//GEN-LAST:event_ControlarProyectoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton AgregarEmpleados;
+    private javax.swing.JButton ControlarProyecto;
+    private javax.swing.JButton CrearProyecto;
+    private javax.swing.JButton VerEmpleados;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
     private PrincipalVisitador visitador;
 
